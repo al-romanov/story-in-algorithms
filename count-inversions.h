@@ -56,6 +56,10 @@ CountInversions_(RandomAccessIt beg, RandomAccessIt end) {
     return res;
 }
 
+/*
+    Counts inversions in sequence between random-access iterators [beg; end).
+    Complexity O(n*log(n)).
+*/
 template <typename RandomAccessIter>
 size_t CountInversions(RandomAccessIter beg, RandomAccessIter end) {
     return CountInversions_(beg, end).n_inversions;
