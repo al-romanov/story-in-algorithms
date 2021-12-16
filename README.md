@@ -4,4 +4,5 @@
 This repo contains different algorithms written in C++. Made with love! Enjoy!
 
 ### Implemented
-* Algorithm of counting inversions (count-inversions.h).
+* Algorithm of counting inversions (count-inversions.h)
+* Random contraction algorithm (random-contraction.h)
