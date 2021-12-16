@@ -1,5 +1,5 @@
-#ifndef STORY_IN_ALGORITHMS_INCLUDE_COUNT_INVERSIONS_H_
-#define STORY_IN_ALGORITHMS_INCLUDE_COUNT_INVERSIONS_H_
+#ifndef STORY_IN_ALGORITHMS_COUNT_INVERSIONS_H_
+#define STORY_IN_ALGORITHMS_COUNT_INVERSIONS_H_
 
 #include <algorithm>
 #include <cstddef>
@@ -67,4 +67,4 @@ size_t CountInversions(RandomAccessIter beg, RandomAccessIter end) {
 
 }
 
-#endif  // STORY_IN_ALGORITHMS_INCLUDE_COUNT_INVERSIONS_H_
+#endif  // STORY_IN_ALGORITHMS_COUNT_INVERSIONS_H_
