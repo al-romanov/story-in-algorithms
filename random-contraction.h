@@ -57,7 +57,11 @@ void Contraction_(AdjacencyList<TVertex, TWeight> &adj_list, TVertex src_vertex,
 
 template <typename TVertex, typename TWeight>
 AdjacencyList<TVertex, TWeight> RandomContraction(const AdjacencyList<TVertex, TWeight> &adj_list) {
-    auto new_adj_list = adj_list;
+    AdjacencyList<TVertex, TWeight> new_adj_list;
+    std::remove_copy_if(adj_list.begin(), adj_list.end(), std::inserter(new_adj_list, new_adj_list.end()),
+        [](const auto &p) {
+            return p.second.size() == 0;
+    });
     std::vector<Edge<TVertex, TWeight>> edges;
     for (const auto &adj_pair : new_adj_list) {
         std::copy(adj_pair.second.begin(), adj_pair.second.end(), std::back_inserter(edges));
